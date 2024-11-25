@@ -22,4 +22,7 @@ class PostFactory extends Factory
             'content' => $this->faker->paragraph(),
         ];
     }
+
+    //how to use this factory
+    //
 }
