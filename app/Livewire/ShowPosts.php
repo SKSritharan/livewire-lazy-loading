@@ -20,7 +20,7 @@ class ShowPosts extends Component
 
     public function render(): View
     {
-        $posts = Post::take($this->amount)->get();
+        $posts = Post::take($this->amount)->where('status', 'Published')->get();
         return view('livewire.show-posts', [
             'posts' => $posts,
         ]);

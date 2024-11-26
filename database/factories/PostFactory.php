@@ -20,9 +20,7 @@ class PostFactory extends Factory
             'user_id' => \App\Models\User::factory(),
             'title' => $this->faker->sentence(),
             'content' => $this->faker->paragraph(),
+            'status' => ['Verified', 'Published', 'Rejected'][rand(0, 2)],
         ];
     }
-
-    //how to use this factory
-    //
 }
